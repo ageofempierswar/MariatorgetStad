@@ -1,0 +1,4 @@
+1. Fixa CSS
+2. Fixa HTML
+3. Edit av info på start(vet ej)
+4. Skapa offert.
