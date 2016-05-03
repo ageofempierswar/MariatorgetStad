@@ -57,16 +57,8 @@ li {margin:0; padding:0 0 0 5px;}
 .menulink:hover {background-color:#eee; color:#333; text-decoration:none;}
 .active {background-color:#2a7a9a; color:#fff;}
 .active:hover {background-color:#2a7a9a; color:#fff;}
-.footer{  background-color: #F1F1F1;
-    width: 100%;
-    height:100%;
-    overflow: auto;
-    box-shadow: 
-        inset 0px 10px 10px -5px grey,
-        inset 0px -10px 10px -5px grey; 
-    padding-top: 50px;
-    color: black;
-    padding: 20px;}
+.footer{  background-color: #F1F1F1; width: 100%;
+    height:100%;overflow: auto;box-shadow:inset 0px 10px 10px -5px grey, inset 0px -10px 10px -5px grey; padding-top:50px;color: black;padding: 20px;}
 .footer a {color:#888; font-weight:400; text-decoration:none; border-bottom: 1px dotted #aaa;}
 .left {float:left; width:49%;}
 .right {float:right; width:49%;}
