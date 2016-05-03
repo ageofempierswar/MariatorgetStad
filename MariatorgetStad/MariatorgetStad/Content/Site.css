@@ -4,12 +4,12 @@
 }*/
 
 /* Set padding to keep content from hitting the edges */
-/*.body-content {
+.body-content {
     position:center;
-    margin: 10px;
+    padding-top: 100px;
     padding-left: 15px;
     padding-right: 15px;
-}*/
+}
 
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
@@ -31,7 +31,7 @@ body {padding:0; margin:0; background-color:#e4e4e4; color:#333; text-align:cent
 #menu {text-align:right;margin-top:-40px;}
 #content {background:#fff; text-align:left; padding:20px 20px 5px; margin:15px 0 15px 0;}
 
-.image{ align-content: center;}
+.image{float: left; width: 100%; position:center;}
 #contact{width: 49%; float: left;}
 #googleMap{width: 49%; float: right;}
 
