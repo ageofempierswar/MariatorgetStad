@@ -8,24 +8,29 @@ using System.Threading.Tasks;
 using System.Web;
 
 namespace MariatorgetStadDAL.Models
+    
 {
     public class Contact
     {
-        [Required(ErrorMessage = "Can not be empty")]
-        public string Subject { get; set; }
 
-        [Required(ErrorMessage = "Can not be empty")]
-        [EmailAddress(ErrorMessage = "Invalid adress, try again (example@teamnordahl.com)")]
-        [DisplayName("Your Email")]
+        public int ID { get; set; }
+
+        [Required(ErrorMessage = "Email får inte lov att vara tom")]
+        [EmailAddress(ErrorMessage = "Fel Adress, prova igen (example@gmail.com)")]
+        [DisplayName("Din Email")]
         public string EmailAdress { get; set; }
 
-        [Required(ErrorMessage = "Can not be empty")]
+        [Required(ErrorMessage = "Ämne får inte lov att vara tom")]
+        [DisplayName("Ämne")]
+         public string Subject { get; set; }
+
         [MaxLength(1000)]
         [DataType(DataType.MultilineText)]
         public string Message { get; set; }
-        public HttpPostedFileBase Upload { get; set; }
 
         [Required(ErrorMessage = "Invalid Captcha")]
         public string ValidationNumber { get; set; }
+
+        public HttpPostedFileBase Upload { get; set; }
     }
 }

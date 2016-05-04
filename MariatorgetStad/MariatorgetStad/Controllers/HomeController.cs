@@ -7,6 +7,7 @@ using System.Web;
 using System.Web.Mvc;
 using MariatorgetStadDAL;
 using MariatorgetStadDAL.Models;
+
 namespace MariatorgetStad.Controllers
 {
     public class HomeController : Controller
@@ -29,7 +30,7 @@ namespace MariatorgetStad.Controllers
         {
             if (ModelState.IsValid)
             {
-                var email = "";
+                var email = Repository.GetEmail();
                 var body = "<p>Email From: {0} (Subject: {1})</p><p>Message:</p><p>{2}</p>";
                 var message = new MailMessage();
                 message.To.Add(new MailAddress(email));
@@ -54,6 +55,11 @@ namespace MariatorgetStad.Controllers
             return View("Index");
 
 
+        }
+
+        public ActionResult Sent()
+        {
+            return View();
         }
     }
 }
