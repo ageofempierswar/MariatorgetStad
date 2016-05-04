@@ -32,8 +32,7 @@ body {padding:0; margin:0; background-color:lightskyblue; color:#333; text-align
 #content {background:lightblue; text-align:left; padding:20px 20px 5px; margin:15px 0 15px 0;}
 
 .image{float: left; width: 100%; position:center;}
-#contact{width: 49%; float: left;}
-#googleMap{width: 49%; float: right;}
+
 
 /* HTML Tags */
 a {text-decoration:none; font-weight:400; color:#b59e4e;}
@@ -42,7 +41,15 @@ a img {border:0;}
 h1 {margin:15px auto 10px auto; padding:0; font-size:2.4em; color:#2a7a9a; letter-spacing:-1px; line-height:1.2em;}
 h1 a {color:#2a7a9a; font-weight:700; text-decoration:none;}
 h1 a:hover {color:#333; text-decoration:none;}
-h2 {margin:0 0 12px 0; padding:10px 0; color:#2a7a9a; font-size:1.4em; font-weight:700; border-top: 1px solid #ddd; border-bottom:1px solid #ddd;}
+h2{
+    margin:0 0 12px 0; 
+    padding:10px 0; 
+    color:#2a7a9a; 
+    font-size:1.4em; 
+    font-weight:700; 
+    border-top: 1px solid #ddd; 
+    border-bottom:1px solid #ddd;
+}
 h2 a {font-weight:700;}
 h3 {font-size:1.4em; font-weight:400; margin:0 0 10px 0;}
 p {margin:0 0 15px 0;}
@@ -57,8 +64,29 @@ li {margin:0; padding:0 0 0 5px;}
 .menulink:hover {background-color:#eee; color:#333; text-decoration:none;}
 .active {background-color:#2a7a9a; color:#fff;}
 .active:hover {background-color:#2a7a9a; color:#fff;}
-.footer{  background-color: lightblue; width: 100%;
-    height:100%;overflow: auto;box-shadow:inset 0px 10px 10px -5px grey, inset 0px -10px 10px -5px grey; padding-top:50px;color: black;padding: 20px;}
+
+.header{  
+    background-color: lightblue; width: 100%;
+    height:100%;
+    overflow: auto;
+    padding-top:50px;color: black;padding: 20px;
+}
+
+.navbar-btn{     
+    float: left;
+    border: solid 1px darkgrey;
+    border-radius: 5px;
+    background-color: lightgrey;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.footer{  
+    background-color: lightblue; width: 100%;
+    height:100%;
+    overflow: auto;
+    padding-top:50px;color: black;padding: 20px;
+}
 .footer a {color:#888; font-weight:400; text-decoration:none; border-bottom: 1px dotted #aaa;}
 .left {float:left; width:49%;}
 .right {float:right; width:49%;}

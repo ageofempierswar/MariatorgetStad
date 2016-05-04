@@ -9,32 +9,30 @@
 
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Mariatroget Städ", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                 
-                    <li>@Html.ActionLink("Offert", "Contact", "Home")</li>
-                </ul>
-                @Html.Partial("_LoginPartial")
-            </div>
-        </div>
-    </div>
-    <div class="container body-content">
-        <div id="wrap">
+    <div id="wrap">
+        <div class="container body-content">
+
+            <header class="header">
+                <div class="row">
+
+                    <h1 class="col-md-6">Välkommen till Mariatorget Städ</h1>
+
+                    <ul class="nav navbar-nav col-md-5 col-md-push-1">
+                        <li class="navbar-btn">@Html.ActionLink("Hem", "Index", "Home", null, new { style = "color:black" })</li>
+                        <li class="navbar-btn">@Html.ActionLink("Offert", "Contact", "Home", null, new { style = "color:black" })</li>
+                        <li class="navbar-btn">@Html.ActionLink("Kontakta oss", "Contact", "Home", null, new { style = "color:black" })</li>
+                    </ul>
+
+                </div>
+            </header>
+
             @RenderBody()
-            <hr />
+            <br />
+
             <footer class="footer">
-             
+                Copyright &copy; 2012 <a href="index.html">Your Name</a><br />
+                Template design by <a href="http://andreasviklund.com/">Andreas Viklund</a><br />
+                Best hosted at <a href="https://www.svenskadomaner.se/?ref=mall&amp;ling=en" title="Svenska Domäner AB">www.svenskadomaner.se</a>
             </footer>
         </div>
     </div>
