@@ -24,13 +24,27 @@ namespace MariatorgetStad.Controllers
             return View();
         }
 
+        public ActionResult Contact()
+        {
+            ViewBag.Message = "Your Contact page.";
+
+            return View();
+        }
+
+        public ActionResult Service()
+        {
+            ViewBag.Message = "Your Service page.";
+
+            return View();
+        }
+
         [ValidateAntiForgeryToken]
         [HttpPost]
         public async Task<ActionResult> Contact(Contact model)
         {
             if (ModelState.IsValid)
             {
-                var email = Repository.GetEmail();
+                var email = ""; /*Repository.GetEmail();*/
                 var body = "<p>Email From: {0} (Subject: {1})</p><p>Message:</p><p>{2}</p>";
                 var message = new MailMessage();
                 message.To.Add(new MailAddress(email));
@@ -52,9 +66,7 @@ namespace MariatorgetStad.Controllers
                 }
 
             }
-            return View("Index");
-
-
+            return View();
         }
 
         public ActionResult Sent()

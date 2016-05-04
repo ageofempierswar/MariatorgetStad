@@ -24,7 +24,9 @@ select,
 textarea {
     max-width: 280px;
 }*/
+
 .blue{background-color:lightskyblue}
+
 /* Main containers */
 body {padding:0; margin:0; background-color:lightskyblue; color:#333; text-align:center; line-height:1.6em;}
 #wrap {width: 1000px; height: auto; text-align:left; align-content:center; margin:0 auto;}
