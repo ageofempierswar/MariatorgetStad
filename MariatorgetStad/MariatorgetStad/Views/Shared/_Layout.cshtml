@@ -13,18 +13,32 @@
         <div class="container body-content">
 
             <header class="header">
-                <div class="row">
+               
+                <nav class="navbar navbar-default">
+                    <p class="col-md-4 navbar-brand">LOGO</p>
+                    <div class="container-fluid">
+                       
+                        <ul class="nav navbar-nav navbar-left">
+                            <li class="btn btn-sm navbar-btn">@Html.ActionLink("Hem", "Index", "Home", null, new { style = "color:black" })</li>
+                            <li class="btn navbar-btn">@Html.ActionLink("Offert", "Contact", "Home", null, new { style = "color:black" })</li>
+                            <li class="btn navbar-btn">@Html.ActionLink("Våra Tjänster", "Service", "Home", null, new { style = "color:black" })</li>
 
-                    <h1 class="col-md-6">Välkommen till Mariatorget Städ</h1>
+                            </ul>
+</div>
+                    </nav>
+                        @*<div class="row">
 
-                    <ul class="nav navbar-nav col-md-5 col-md-push-1">
-                        <li class="navbar-btn">@Html.ActionLink("Hem", "Index", "Home", null, new { style = "color:black" })</li>
-                        <li class="navbar-btn">@Html.ActionLink("Offert", "Contact", "Home", null, new { style = "color:black" })</li>
-                        <li class="navbar-btn">@Html.ActionLink("Våra Tjänster", "Service", "Home", null, new { style = "color:black" })</li>
-                    </ul>
+                            <h1 class="col-md-6">Välkommen till Mariatorget Städ</h1>
+                            <ul class="nav navbar-nav col-md-5 col-md-push-1">
+                                <li class="navbar-btn">@Html.ActionLink("Hem", "Index", "Home", null, new { style = "color:black" })</li>
+                                <li class="navbar-btn">@Html.ActionLink("Offert", "Contact", "Home", null, new { style = "color:black" })</li>
+                                <li class="navbar-btn">@Html.ActionLink("Våra Tjänster", "Service", "Home", null, new { style = "color:black" })</li>
+                            </ul>
 
-                </div>
+
+                        </div>*@
             </header>
+            
 
             @RenderBody()
             <br />
