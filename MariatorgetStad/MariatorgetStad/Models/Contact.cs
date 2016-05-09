@@ -7,14 +7,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web;
 
-namespace MariatorgetStadDAL.Models
+namespace MariatorgetStad.Models
     
 {
     public class Contact
     {
-
-        public int ID { get; set; }
-
         [Required(ErrorMessage = "Email får inte lov att vara tom")]
         [EmailAddress(ErrorMessage = "Fel Adress, prova igen (example@gmail.com)")]
         [DisplayName("Din Email")]
@@ -28,9 +25,16 @@ namespace MariatorgetStadDAL.Models
         [DataType(DataType.MultilineText)]
         public string Message { get; set; }
 
-        [Required(ErrorMessage = "Invalid Captcha")]
-        public string ValidationNumber { get; set; }
+        [DisplayName("Städning")]
+        public bool Cleaning { get; set; }
+        [DisplayName("Underhåll")]
+        public bool Maintenance { get; set; }
+        [DisplayName("Service")]
+        public bool Service { get; set; }
 
-        public HttpPostedFileBase Upload { get; set; }
+        //[Required(ErrorMessage = "Invalid Captcha")]
+        //public string ValidationNumber { get; set; }
+
+        //public HttpPostedFileBase Upload { get; set; }
     }
 }

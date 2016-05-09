@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 using MariatorgetStadDAL;
-using MariatorgetStadDAL.Models;
+using MariatorgetStad.Models;
+using System.Net;
 
 namespace MariatorgetStad.Controllers
 {
@@ -40,30 +41,41 @@ namespace MariatorgetStad.Controllers
 
         [ValidateAntiForgeryToken]
         [HttpPost]
-        public async Task<ActionResult> Contact(Contact model)
+        public async Task<ActionResult> Contact(Models.Contact model)
         {
             if (ModelState.IsValid)
             {
-                var email = ""; /*Repository.GetEmail();*/
+                var email = "linusekdahl@gmail.com";
+
                 var body = "<p>Email From: {0} (Subject: {1})</p><p>Message:</p><p>{2}</p>";
                 var message = new MailMessage();
                 message.To.Add(new MailAddress(email));
                 message.Subject = model.Subject;
+                message.From = new MailAddress(model.EmailAdress);
                 message.Body = string.Format(body, model.EmailAdress, model.Subject, model.Message);
                 message.IsBodyHtml = true;
 
-                if (model.ValidationNumber == "gHft3")
+                using (var client = new SmtpClient())
                 {
-                    using (var smtp = new SmtpClient())
-                    {
-                        await smtp.SendMailAsync(message);
-                        return RedirectToAction("Sent");
-                    }
+                    client.Host = "smtp.gmail.com";
+                    client.Port = 587;
+                    client.EnableSsl = true;
+                    client.Credentials = new NetworkCredential("linusekdahl@gmail.com","Monaghan5");
+              
+
+                    await client.SendMailAsync(message);
+                    return RedirectToAction("Index");
                 }
-                else
-                {
-                    ViewBag.WrongAnswer = "Wrong answer. Please try again and this time make sure you've spelled it right.";
-                }
+                
+
+                //if (model.ValidationNumber == "gHft3")
+                //{
+
+                //}
+                //else
+                //{
+                //    ViewBag.WrongAnswer = "Wrong answer. Please try again and this time make sure you've spelled it right.";
+                //}
 
             }
             return View();

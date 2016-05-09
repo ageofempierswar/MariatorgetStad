@@ -6,9 +6,9 @@
 /* Set padding to keep content from hitting the edges */
 .body-content {
     position:center;
-    padding-top: 100px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -27,13 +27,103 @@ textarea {
 
 .blue{background-color:lightskyblue}
 
+
+@media Screen and (min-width: 992px) {
+   .ButtonGroupCustom {
+       padding-top:30px;
+   }
+   .LogoImage {
+    max-width:400px; max-height:100px; margin-left:auto; margin-right:auto;
+    overflow:hidden;
+    float:none !important;
+    margin-right:0;
+}
+}
+@media Screen and (max-width: 992px) {
+    .LogoImage {
+    max-width:400px; max-height:100px; margin-left:auto; margin-right:auto;
+    overflow:hidden;
+     margin-right:-70px;
+}
+}
+
+
 /* Main containers */
 body {padding:0; margin:0; background-color:lightskyblue; color:#333; text-align:center; line-height:1.6em;}
-#wrap {width: 1000px; height: auto; text-align:left; align-content:center; margin:0 auto;}
+#wrap {
+    min-width:700px;
+}
 #menu {text-align:right;margin-top:-40px;}
 #content {background:lightblue; text-align:left; padding:20px 20px 5px; margin:15px 0 15px 0;}
-
 .image{float: left; width: 100%; position:center;}
+
+
+#navigation {
+    vertical-align:middle;
+    width:49%;
+    float:left;
+    margin:0;
+    border:0;
+        padding-top: 30px;
+}
+
+#serviceList{
+    width:49%;
+    height:450px;
+    min-height:350px;
+    min-width:50%;
+    float:right;
+    vertical-align:auto;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+#serviceChoice{
+    float:left;
+    width:49%;
+    height:450px;
+    margin:0;
+}
+.service{
+    align-content:center;
+    margin:0;
+    margin-left:10px;
+    margin-right:10px;
+    font-size:14px;
+    min-width:100px;
+    max-width:140px;
+}
+
+#contact{
+    width:100%;
+    min-width:30%;
+    height:350px;
+    float:left;
+    margin:0;
+}
+
+#submit{
+    margin-top:20px;
+    float:left;
+}
+
+.header{  
+    background-color: lightblue; width: 100%;
+    height:100%;
+    width:100%;
+    overflow: auto;
+    padding-top:50px;color: black;padding: 20px;
+}
+
+.navbar-btn{     
+    float: left;
+    border: solid 1px darkgrey;
+    border-radius: 5px;
+    background-color: lightgrey;
+    font-size: 22px;
+    margin: 10px;
+}
+
+
 
 
 /* HTML Tags */
@@ -55,7 +145,12 @@ h2{
 h2 a {font-weight:700;}
 h3 {font-size:1.4em; font-weight:400; margin:0 0 10px 0;}
 p {margin:0 0 15px 0;}
-ul {margin:0 0 15px 20px; padding:0;}
+ul {
+    margin:0 0 15px 20px; 
+    padding:0;
+    height:100%;
+
+}
 li {margin:0; padding:0 0 0 5px;}
 
 /* Various classes */
@@ -66,22 +161,6 @@ li {margin:0; padding:0 0 0 5px;}
 .menulink:hover {background-color:#eee; color:#333; text-decoration:none;}
 .active {background-color:#2a7a9a; color:#fff;}
 .active:hover {background-color:#2a7a9a; color:#fff;}
-
-.header{  
-    background-color: lightblue; width: 100%;
-    height:100%;
-    overflow: auto;
-    padding-top:50px;color: black;padding: 20px;
-}
-
-.navbar-btn{     
-    float: left;
-    border: solid 1px darkgrey;
-    border-radius: 5px;
-    background-color: lightgrey;
-    font-size: 16px;
-    margin: 10px;
-}
 
 .footer{  
     background-color: lightblue; width: 100%;

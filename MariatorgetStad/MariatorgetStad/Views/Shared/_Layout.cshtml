@@ -13,38 +13,24 @@
         <div class="container body-content">
 
             <header class="header">
-               
-                <nav class="navbar navbar-default">
-                    <p class="col-md-4 navbar-brand">LOGO</p>
-                    <div class="container-fluid">
-                       
-                        <ul class="nav navbar-nav navbar-left">
-                            <li class="btn btn-sm navbar-btn">@Html.ActionLink("Hem", "Index", "Home", null, new { style = "color:black" })</li>
-                            <li class="btn navbar-btn">@Html.ActionLink("Offert", "Contact", "Home", null, new { style = "color:black" })</li>
-                            <li class="btn navbar-btn">@Html.ActionLink("Våra Tjänster", "Service", "Home", null, new { style = "color:black" })</li>
+                <div class=" container">
 
-                            </ul>
-</div>
-                    </nav>
-                        @*<div class="row">
+                    <div class="col-md-6 col-lg-6 col-sm-12"><img  src="~/Images/Mariatorget_Logo.png" class="LogoImage" /></div>
 
-                            <h1 class="col-md-6">Välkommen till Mariatorget Städ</h1>
-                            <ul class="nav navbar-nav col-md-5 col-md-push-1">
-                                <li class="navbar-btn">@Html.ActionLink("Hem", "Index", "Home", null, new { style = "color:black" })</li>
-                                <li class="navbar-btn">@Html.ActionLink("Offert", "Contact", "Home", null, new { style = "color:black" })</li>
-                                <li class="navbar-btn">@Html.ActionLink("Våra Tjänster", "Service", "Home", null, new { style = "color:black" })</li>
-                            </ul>
-
-
-                        </div>*@
+                    <div class="col-md-6 col-lg-6 col-sm-12 ButtonGroupCustom"> @*pull left*@
+                        @Html.ActionLink("Hem", "Index", "Home", null, new { @class = "btn btn-primary btn-lg col-xs-12 col-sm-12 col-md-5"})
+                        @Html.ActionLink("Kontakta Oss", "Contact", "Home", null, new { @class = "btn btn-default btn-lg col-xs-12 col-sm-12 col-md-5" })
+                    </div>
+                                             
+                </div>
             </header>
-            
+
 
             @RenderBody()
             <br />
 
             <footer class="footer">
-                Copyright &copy; 2012 <a href="index.html">Your Name</a><br />
+                Copyright &copy; 2016 <a href="index.html">EC Utbildning</a><br />
                 Template design by <a href="http://andreasviklund.com/">Andreas Viklund</a><br />
                 Best hosted at <a href="https://www.svenskadomaner.se/?ref=mall&amp;ling=en" title="Svenska Domäner AB">www.svenskadomaner.se</a>
             </footer>
