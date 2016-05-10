@@ -65,18 +65,7 @@ namespace MariatorgetStad.Controllers
 
                     await client.SendMailAsync(message);
                     return RedirectToAction("Index");
-                }
-                
-
-                //if (model.ValidationNumber == "gHft3")
-                //{
-
-                //}
-                //else
-                //{
-                //    ViewBag.WrongAnswer = "Wrong answer. Please try again and this time make sure you've spelled it right.";
-                //}
-
+                }               
             }
             return View();
         }

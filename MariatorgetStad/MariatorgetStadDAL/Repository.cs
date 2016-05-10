@@ -12,10 +12,7 @@ namespace MariatorgetStadDAL
         {
             using (var context = new MariatorgetStadContext())
             {
-                //return
-                //    (from u in context
-                //     where u.AdminLevel == 1
-                //     select u.Email).FirstOrDefault();
+                
             }
         }
     }
