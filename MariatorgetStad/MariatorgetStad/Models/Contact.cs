@@ -12,6 +12,7 @@ namespace MariatorgetStad.Models
 {
     public class Contact
     {
+
         [Required(ErrorMessage = "Email får inte lov att vara tom")]
         [EmailAddress(ErrorMessage = "Fel Adress, prova igen (example@gmail.com)")]
         [DisplayName("Din Email")]
@@ -29,12 +30,6 @@ namespace MariatorgetStad.Models
         public bool Cleaning { get; set; }
         [DisplayName("Underhåll")]
         public bool Maintenance { get; set; }
-        [DisplayName("Service")]
-        public bool Service { get; set; }
 
-        //[Required(ErrorMessage = "Invalid Captcha")]
-        //public string ValidationNumber { get; set; }
-
-        //public HttpPostedFileBase Upload { get; set; }
     }
 }

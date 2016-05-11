@@ -88,12 +88,15 @@ textarea {
     height:450px;
     margin:0;
 }
+.TextAreaLocker {
+    resize : none;
+}
 .service{
     align-content:center;
     margin:0;
     margin-left:10px;
     margin-right:10px;
-    font-size:14px;
+    font-size:16px;
     min-width:100px;
     max-width:140px;
 }

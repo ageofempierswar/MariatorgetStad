@@ -187,8 +187,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Images\IMG_2833.jpg" />
     <Content Include="Images\Mariatorget_Logo.png" />
+    <Content Include="Images\Mariatorget_Pic.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />

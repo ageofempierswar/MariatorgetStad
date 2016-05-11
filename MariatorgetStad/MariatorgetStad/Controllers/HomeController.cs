@@ -57,10 +57,10 @@ namespace MariatorgetStad.Controllers
 
                 using (var client = new SmtpClient())
                 {
-                    client.Host = "smtp.gmail.com";
-                    client.Port = 587;
-                    client.EnableSsl = true;
-                    client.Credentials = new NetworkCredential("linusekdahl@gmail.com","Monaghan5");
+                    client.Host = "send.one.com";
+                    client.Port = 465;
+                    client.EnableSsl = false;
+                    client.Credentials = new NetworkCredential("contact@mariatorgetstad.se", "123456789");
               
 
                     await client.SendMailAsync(message);
