@@ -51,50 +51,84 @@
 
             <form action="SendContact.php"  method="POST">
 
-                <div id="serviceList" class="row">
+                <h2>Välj vilken typ av tjänst eller tjänster du behöver.</h2>
+
+                <div id="serviceList">
                     <div class="col-sm-6 col-md-6">
-                        <h2>Städning</h2>
-                        <ul class="service">
-                            <li><p>Butik städning</p></li>
-                            <li><p>Bygg städning</p></li>
-                            <li><p>Flytt städning</p></li>
-                            <li><p>Industri städning</p></li>
-                            <li><p>Kontor städning</p></li>
-                            <li><p>Skola och Dagis städning</p></li>
-                            <li><p>Trapp städning</p></li>
-                            <li><p>Bygg städning</p></li>
-                        </ul>
+
+                        <div id="serviceChoice" class="form-group">
+                            <div>
+                                <h2>
+                                    <label for="Cleaning" style="font-size: 20px; width: 100px; margin: 10px;">St&#228;dning</label>
+                                    <input data-val="true" data-val-required="The Städning field is required." htmlattributes="{ class = form-control }" id="Cleaning" name="Cleaning" type="checkbox" value="true" />
+                                    <input name="Cleaning" type="hidden" value="false" />
+                                </h2>
+                            </div>
+
+                            <ul class="service">
+                                <li>
+                                    <p>Butikstädning</p>
+                                </li>
+                                <li>
+                                    <p>Byggstädning</p>
+                                </li>
+                                <li>
+                                    <p>Flyttstädning</p>
+                                </li>
+                                <li>
+                                    <p>Industristädning</p>
+                                </li>
+                                <li>
+                                    <p>Kontorstädning</p>
+                                </li>
+                                <li>
+                                    <p>Skola och Dagis städning</p>
+                                </li>
+                                <li>
+                                    <p>Trappstädning</p>
+                                </li>
+                            </ul>
+
+                        </div>
                     </div>
 
                     <div class="col-sm-6 col-md-6">
-                        <h2>Underhåll</h2>
-                        <ul class="service">
-                            <li><p>Golv vård</p></li>
-                            <li><p>Matt tvätt</p></li>
-                            <li><p>Fönster putts</p></li>
-                            <li><p>Stor städning</p></li>
-                            <li><p>Textil tvätt</p></li>
-                        </ul>
+
+                        <div id="serviceChoice" class="form-group">
+                            <div>
+                                <h2>
+                                    <label for="Maintenance" style="font-size: 20px; width: 100px; margin: 10px;">Underh&#229;ll</label>
+                                    <input data-val="true" data-val-required="The Underhåll field is required." htmlattributes="{ class = form-control }" id="Maintenance" name="Maintenance" type="checkbox" value="true" />
+                                    <input name="Maintenance" type="hidden" value="false" />
+                                </h2>
+                            </div>
+
+                            <ul class="service">
+                                <li>
+                                    <p>Golvvård</p>
+                                </li>
+                                <li>
+                                    <p>Matt-tvätt</p>
+                                </li>
+                                <li>
+                                    <p>Fönsterputsning</p>
+                                </li>
+                                <li>
+                                    <p>Storstädning</p>
+                                </li>
+                                <li>
+                                    <p>Textiltvätt</p>
+                                </li>
+                            </ul>
+
+                        </div>
                     </div>
                 </div>
-                <div id="serviceChoice" class="form-group">
 
-                    <h2>Välj vilken typ av tjänst eller tjänster du behöver.</h2>
-
-                    <div>
-                        <label for="Cleaning" style="font-size: 18px; width: 80px; margin: 10px;">St&#228;dning</label>
-                        <input data-val="true" data-val-required="The Städning field is required." htmlAttributes="{ class = form-control }" id="Cleaning" name="Cleaning" type="checkbox" value="true" /><input name="Cleaning" type="hidden" value="false" />
-                        <br />
-                        <label for="Maintenance" style="font-size: 18px; width: 80px; margin: 10px;">Underh&#229;ll</label>
-                        <input data-val="true" data-val-required="The Underhåll field is required." htmlAttributes="{ class = form-control }" id="Maintenance" name="Maintenance" type="checkbox" value="true" /><input name="Maintenance" type="hidden" value="false" />
-                        <br />
-                    </div>
-
-                </div>
                 <div id="contact">
                     <div class="form-horizontal">
 
-                        <label for="EmailAdress">Din Email</label>
+                        <label for="EmailAdress" class="Contact-label">Din Email</label>
                         <div>
                             <input class="form-control text-box single-line" data-val="true" data-val-email="Fel Adress, prova igen (example@gmail.com)" data-val-required="Email får inte lov att vara tom" id="EmailAdress" name="EmailAdress" rows="8" type="email" value="" />
                             <span class="field-validation-valid text-danger" data-valmsg-for="EmailAdress" data-valmsg-replace="true"></span>
@@ -103,7 +137,7 @@
 
                     <div class="form-horizontal">
 
-                        <label for="Subject">&#196;mne</label>
+                        <label for="Subject" class="Contact-label">&#196;mne</label>
                         <div>
                             <input class="form-control text-box single-line" data-val="true" data-val-required="Ämne får inte lov att vara tom" id="Subject" name="Subject" rows="8" type="text" value="" />
                             <span class="field-validation-valid text-danger" data-valmsg-for="Subject" data-valmsg-replace="true"></span>
@@ -112,7 +146,7 @@
 
                     <div class="form-horizontal">
 
-                        <label for="Message">Message</label>
+                        <label for="Message" class="Contact-label">Message</label>
                         <div>
                             <textarea class="form-control text-box multi-line" data-val="true" data-val-maxlength="The field Message must be a string or array type with a maximum length of &#39;1000&#39;." data-val-maxlength-max="1000" id="Message" name="Message" rows="8"></textarea>
                             <span class="field-validation-valid text-danger TextAreaLocker" data-valmsg-for="Message" data-valmsg-replace="true"></span>
