@@ -33,7 +33,7 @@
                 <div class="col-md-6 col-lg-6 col-sm-12"><img  src="Images/Mariatorget_Logo.png" class="LogoImage" /></div>
 
                 <div class="col-md-6 col-lg-6 col-sm-12 ButtonGroupCustom">
-                    <a class="btn btn-primary btn-lg col-xs-12 col-sm-12 col-md-5" href="Index.php">Hem</a>
+                    <a class="btn btn-primary btn-lg col-xs-12 col-sm-12 col-md-5" href="index.php">Hem</a>
                     <a class="btn btn-default btn-lg col-xs-12 col-sm-12 col-md-5" href="Contact.php">Kontakta Oss</a>
                 </div>
 
