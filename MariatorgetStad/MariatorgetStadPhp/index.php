@@ -12,6 +12,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name=“Description“ content="Mariatorget Städ erbjuder dig som företag städning runt om i skåne." />
+    <meta name=“Keywords“ content="Städar, Mariatorg, MariatorgStäd, Mariatorgstädning, städning, Företagsstädning, Vi städar företag, Städas" />
     <title>Hem - Mariatorget Städ</title>
     <link href="Content/bootstrap.css" rel="stylesheet" />
     <link href="Content/site.css" rel="stylesheet" />

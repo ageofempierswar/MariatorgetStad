@@ -33,10 +33,10 @@
                 <div class="col-md-6 col-lg-6 col-sm-12"><img  src="Images/Mariatorget_Logo.png" class="LogoImage" /></div>
 
                 <div class="col-md-6 col-lg-6 col-sm-12 ButtonGroupCustom">
-                      <a class="btn btn-primary btn-lg col-xs-12 col-sm-12 col-md-5" href="index.php">Hem</a>
+                    <a class="btn btn-primary btn-lg col-xs-12 col-sm-12 col-md-5" href="/">Hem</a>
                     <a class="btn btn-default btn-lg col-xs-12 col-sm-12 col-md-5" href="Contact.php">Offert</a>
                     <a class="btn btn-default btn-lg col-xs-12 col-sm-12 col-md-5" href="Service.php">Service</a>
-                   <a class="btn btn-default btn-lg col-xs-12 col-sm-12 col-md-5" href="Referenses.html">Referenser</a>
+                    <a class="btn btn-default btn-lg col-xs-12 col-sm-12 col-md-5" href="Referenses.html">Referenser</a>
                 </div>
             </div>
         </header>
@@ -45,6 +45,37 @@
 
 
 
+        <div id="content" style="height:1000px;margin-top:20px;">
+            <h1>Offert</h1>
+            <br />
+            <form action="SendContact.php" method="POST">
+
+                <div class="form-horizontal">
+
+                    <label for="HumanName" class="Contact-label">Ditt namn:</label>
+                    <div>
+                        <input class="form-control text-box single-line" data-val="true" data-val-required="Ämne får inte lov att vara tom" id="HumanName" name="HumanNames" rows="8" type="text" value="" />
+                        <span class="field-validation-valid text-danger" data-valmsg-for="HumanName" data-valmsg-replace="true"></span>
+                    </div>
+                </div>
+
+                <div class="form-horizontal">
+
+                    <label for="Phone" class="Contact-label">Telefon/Mobil:</label>
+                    <div>
+                        <input class="form-control text-box single-line" data-val="true" data-val-required="Ämne får inte lov att vara tom" id="Phone" name="phone" rows="8" type="text" value="" />
+                        <span class="field-validation-valid text-danger" data-valmsg-for="phone" data-valmsg-replace="true"></span>
+                    </div>
+                </div>
+
+                <div class="form-horizontal">
+
+                    <label for="Foretage" class="Contact-label">Företagsnamn/Privat:</label>
+                    <div>
+                        <input class="form-control text-box single-line" data-val="true" data-val-required="Ämne får inte lov att vara tom" id="Foretage" name="foretage" rows="8" type="text" value="" />
+                        <span class="field-validation-valid text-danger" data-valmsg-for="foretage" data-valmsg-replace="true"></span>
+                    </div>
+                </div>
 
                 <div id="contact">
                     <div class="form-horizontal">
@@ -55,22 +86,39 @@
                             <span class="field-validation-valid text-danger" data-valmsg-for="EmailAdress" data-valmsg-replace="true"></span>
                         </div>
                     </div>
-
                     <div class="form-horizontal">
 
-                        <label for="Subject" class="Contact-label">&#196;mne</label>
+                        <label for="Foretage" class="Contact-label">Ort:</label>
                         <div>
-                            <input class="form-control text-box single-line" data-val="true" data-val-required="Ämne får inte lov att vara tom" id="Subject" name="Subject" rows="8" type="text" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="Subject" data-valmsg-replace="true"></span>
+                            <input class="form-control text-box single-line" data-val="true" data-val-required="Ämne får inte lov att vara tom" id="Foretage" name="foretage" rows="8" type="text" value="" />
+                            <span class="field-validation-valid text-danger" data-valmsg-for="foretage" data-valmsg-replace="true"></span>
+                        </div>
+                    </div>
+                    <div class="form-horizontal">
+
+                        <label for="Foretage" class="Contact-label">Ange städintervall / Engångs:</label>
+                        <div>
+                            <input class="form-control text-box single-line" data-val="true" data-val-required="Ämne får inte lov att vara tom" id="Foretage" name="foretage" rows="8" type="text" value="" />
+                            <span class="field-validation-valid text-danger" data-valmsg-for="foretage" data-valmsg-replace="true"></span>
+                        </div>
+                    </div>
+                    <div class="form-horizontal">
+
+                        <label for="Foretage" class="Contact-label">Städyta (kvm):</label>
+                        <div>
+                            <input class="form-control text-box single-line" data-val="true" data-val-required="Ämne får inte lov att vara tom" id="Foretage" name="foretage" rows="8" type="text" value="" />
+                            <span class="field-validation-valid text-danger" data-valmsg-for="foretage" data-valmsg-replace="true"></span>
                         </div>
                     </div>
 
+
+
+
                     <div class="form-horizontal">
 
 
-                        <label for="Message" class="Contact-label">Meddelande</label>
+                        <label for="Message" class="Contact-label">Övrigt</label>
 
-                        <label for="Message" class="Contact-label">Message</label>
 
                         <div>
                             <textarea class="form-control text-box multi-line" data-val="true" data-val-maxlength="The field Message must be a string or array type with a maximum length of &#39;1000&#39;." data-val-maxlength-max="1000" id="Message" name="Message" rows="8"></textarea>
@@ -78,9 +126,12 @@
                         </div>
                     </div>
                 </div>
-                <div id="submit" class="form-group">
-                    <div>
-                        <input type="submit" class="btn btn-default" name="submit" value="Skicka" />
+
+                <div class="submit">
+                    <div id="submit" class="form-group">
+                        <div>
+                            <input type="submit" class="btn btn-default" name="submit" value="Skicka" />
+                        </div>
                     </div>
                 </div>
             </form>

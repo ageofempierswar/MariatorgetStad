@@ -52,11 +52,12 @@ textarea {
 body {padding:0; margin:0; background-color:lightskyblue; color:#333; text-align:center; line-height:1.6em;}
 #wrap {
     min-width:700px;
+    height:100%;
 }
 #menu {text-align:right;margin-top:-40px;}
-#content {background:white; text-align:left; padding:20px 20px 5px; margin:15px 0 15px 0;}
+#content {background:white; text-align:left; padding:20px 20px 5px; margin:15px 0 15px 0; }
 .image{float: left; width: 100%; position:center;}
-
+.submit{padding-top:550px;}
 
 #navigation {
     vertical-align:middle;
@@ -190,4 +191,4 @@ li {margin:0; padding:0 0 0 5px;}
 .right {float:right; width:49%;}
 .centered {text-align:center;}
 .hide {display:none;}
-.clear {clear:both; width:980px; visibility:hidden;}
+.clear {clear:both; width:980px; visibility:hidden;height:200px}
