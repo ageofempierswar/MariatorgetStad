@@ -34,7 +34,11 @@
 
                 <div class="col-md-6 col-lg-6 col-sm-12 ButtonGroupCustom">
                     <a class="btn btn-primary btn-lg col-xs-12 col-sm-12 col-md-5" href="index.php">Hem</a>
+<<<<<<< HEAD
                     <a class="btn btn-default btn-lg col-xs-12 col-sm-12 col-md-5" href="Contact.php">Offert</a>
+=======
+                    <a class="btn btn-default btn-lg col-xs-12 col-sm-12 col-md-5" href="Contact.php">Kontakta Oss</a>
+>>>>>>> origin/master
                 </div>
 
             </div>
@@ -61,6 +65,10 @@
                                 <h2>
                                     <label for="Cleaning" style="font-size: 20px; width: 100px; margin: 10px;">St&#228;dning</label>
                                     <input data-val="true" data-val-required="The Städning field is required." htmlattributes="{ class = form-control }" id="Cleaning" name="Cleaning" type="checkbox" value="true" />
+<<<<<<< HEAD
+=======
+                                    <input name="Cleaning" type="hidden" value="false" />
+>>>>>>> origin/master
                                 </h2>
                             </div>
 
@@ -98,6 +106,10 @@
                                 <h2>
                                     <label for="Maintenance" style="font-size: 20px; width: 100px; margin: 10px;">Underh&#229;ll</label>
                                     <input data-val="true" data-val-required="The Underhåll field is required." htmlattributes="{ class = form-control }" id="Maintenance" name="Maintenance" type="checkbox" value="true" />
+<<<<<<< HEAD
+=======
+                                    <input name="Maintenance" type="hidden" value="false" />
+>>>>>>> origin/master
                                 </h2>
                             </div>
 
@@ -144,7 +156,11 @@
 
                     <div class="form-horizontal">
 
+<<<<<<< HEAD
                         <label for="Message" class="Contact-label">Meddelande</label>
+=======
+                        <label for="Message" class="Contact-label">Message</label>
+>>>>>>> origin/master
                         <div>
                             <textarea class="form-control text-box multi-line" data-val="true" data-val-maxlength="The field Message must be a string or array type with a maximum length of &#39;1000&#39;." data-val-maxlength-max="1000" id="Message" name="Message" rows="8"></textarea>
                             <span class="field-validation-valid text-danger TextAreaLocker" data-valmsg-for="Message" data-valmsg-replace="true"></span>
