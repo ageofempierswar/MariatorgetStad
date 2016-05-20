@@ -1,12 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MariatorgetStad", "MariatorgetStad\MariatorgetStad.csproj", "{92AC3CAE-41F6-4DF4-91AB-D5A278962485}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MariatorgetStadDAL", "MariatorgetStadDAL\MariatorgetStadDAL.csproj", "{FE4D8DFF-73B0-4E5F-9C3E-830872E51F20}"
-EndProject
 Project("{A0786B88-2ADB-4C21-ABE8-AA2D79766269}") = "MariatorgetStadPhp", "MariatorgetStadPhp\MariatorgetStadPhp.phpproj", "{13C82544-263B-4F15-BABE-4AE3AACDEE63}"
 EndProject
 Global
@@ -15,14 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{92AC3CAE-41F6-4DF4-91AB-D5A278962485}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{92AC3CAE-41F6-4DF4-91AB-D5A278962485}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{92AC3CAE-41F6-4DF4-91AB-D5A278962485}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{92AC3CAE-41F6-4DF4-91AB-D5A278962485}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FE4D8DFF-73B0-4E5F-9C3E-830872E51F20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FE4D8DFF-73B0-4E5F-9C3E-830872E51F20}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FE4D8DFF-73B0-4E5F-9C3E-830872E51F20}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FE4D8DFF-73B0-4E5F-9C3E-830872E51F20}.Release|Any CPU.Build.0 = Release|Any CPU
 		{13C82544-263B-4F15-BABE-4AE3AACDEE63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{13C82544-263B-4F15-BABE-4AE3AACDEE63}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
