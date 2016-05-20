@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 /*body {
-=======
-﻿/*body {
->>>>>>> origin/master
     padding-top: 50px;
     padding-bottom: 20px;
 }*/
@@ -58,11 +54,7 @@ body {padding:0; margin:0; background-color:lightskyblue; color:#333; text-align
     min-width:700px;
 }
 #menu {text-align:right;margin-top:-40px;}
-<<<<<<< HEAD
 #content {background:white; text-align:left; padding:20px 20px 5px; margin:15px 0 15px 0;}
-=======
-#content {background:lightblue; text-align:left; padding:20px 20px 5px; margin:15px 0 15px 0;}
->>>>>>> origin/master
 .image{float: left; width: 100%; position:center;}
 
 
@@ -193,11 +185,7 @@ li {margin:0; padding:0 0 0 5px;}
     overflow: auto;
     padding-top:50px;color: black;padding: 20px;
 }
-<<<<<<< HEAD
 .footer a {color:blue; font-weight:400; text-decoration:none; border-bottom: 1px dotted #aaa;}
-=======
-.footer a {color:#888; font-weight:400; text-decoration:none; border-bottom: 1px dotted #aaa;}
->>>>>>> origin/master
 .left {float:left; width:49%;}
 .right {float:right; width:49%;}
 .centered {text-align:center;}

@@ -13,8 +13,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hem - Mariatorget Städ</title>
-    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
     <link href="Content/site.css" rel="stylesheet" />
+
     <script src="Scripts/modernizr-2.6.2.js"></script>
 
 
@@ -29,11 +30,11 @@
                     <div class="col-md-6 col-lg-6 col-sm-12">
                         <img src="Images/Mariatorget_Logo.png" class="LogoImage" />
                     </div>
-
                     <div class="col-md-6 col-lg-6 col-sm-12 ButtonGroupCustom">
                         <a class="btn btn-primary btn-lg col-xs-12 col-sm-12 col-md-5" href="/">Hem</a>
                         <a class="btn btn-default btn-lg col-xs-12 col-sm-12 col-md-5" href="Contact.php">Offert</a>
                         <a class="btn btn-default btn-lg col-xs-12 col-sm-12 col-md-5" href="Service.php">Service</a>
+                        <a class="btn btn-default btn-lg col-xs-12 col-sm-12 col-md-5" href="Referenses.html">Referenser</a>
                     </div>
 
                 </div>
@@ -111,9 +112,10 @@
         </div>
     </div>
 
-    <script src="Scripts/bootstrap.min.js"></script>
-    <script src="Scripts/jquery-1.10.2.min.js"></script>
-    <script src="Scripts/respond.min.js"></script>
+    <script src="Scripts/jquery-1.10.2.js"></script>
+
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/respond.js"></script>
 
 
 </body>

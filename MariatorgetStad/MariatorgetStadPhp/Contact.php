@@ -36,6 +36,7 @@
                       <a class="btn btn-primary btn-lg col-xs-12 col-sm-12 col-md-5" href="index.php">Hem</a>
                     <a class="btn btn-default btn-lg col-xs-12 col-sm-12 col-md-5" href="Contact.php">Offert</a>
                     <a class="btn btn-default btn-lg col-xs-12 col-sm-12 col-md-5" href="Service.php">Service</a>
+                   <a class="btn btn-default btn-lg col-xs-12 col-sm-12 col-md-5" href="Referenses.html">Referenser</a>
                 </div>
             </div>
         </header>
