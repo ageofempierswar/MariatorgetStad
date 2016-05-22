@@ -111,7 +111,43 @@
                         </div>
                     </div>
 
+                    <div>
+                        
+                        <label for="Flyttstädning" style="font-size: 20px; width: 115px; margin: 10px;">Flyttstädning</label>
+                        <input data-val="true" data-val-required="The Flyttstädning field is required." htmlattributes="{ class = form-control }" id="Flyttstädning" name="Flyttstädning" type="checkbox" value="true" />
+                        <input name="Flyttstädning" type="hidden" value="false" />
 
+
+
+                        <label for="Kontorsstädning" style="font-size: 20px;  width: 155px; margin: 10px;">Kontorsstädning</label>
+                        <input data-val="true" data-val-required="The Kontorsstädning field is required." htmlattributes="{ class = form-control }" id="Kontorsstädning" name="Kontorsstädning" type="checkbox" value="true" />
+                        <input name="Kontorsstädning" type="hidden" value="false" />
+
+
+                        <label for="Trappstädning" style="font-size: 20px;  width: 130px; margin: 10px;">Trappstädning</label>
+                        <input data-val="true" data-val-required="The Trappstädning field is required." htmlattributes="{ class = form-control }" id="Trappstädning" name="Trappstädning" type="checkbox" value="true" />
+                        <input name="Trappstädning" type="hidden" value="false" />
+
+                        <label for="Fönsterputsning" style="font-size: 20px; width: 150px; margin: 10px;">Fönsterputsning</label>
+                        <input data-val="true" data-val-required="The Fönsterputsning field is required." htmlattributes="{ class = form-control }" id="Fönsterputsning" name="Fönsterputsning" type="checkbox" value="true" />
+                        <input name="Fönsterputsning" type="hidden" value="false" />
+
+                        <br />
+
+                        <label for="Byggstädning" style="font-size: 20px;  width: 130px; margin: 10px;">Byggstädning</label>
+                        <input data-val="true" data-val-required="The Byggstädning field is required." htmlattributes="{ class = form-control }" id="Byggstädning" name="Byggstädning" type="checkbox" value="true" />
+                        <input name="Byggstädning" type="hidden" value="false" />
+
+
+                        <label for="Polishbehandling" style="font-size: 20px;  width: 160px; margin: 10px;">Polishbehandling</label>
+                        <input data-val="true" data-val-required="The Polishbehandling field is required." htmlattributes="{ class = form-control }" id="Polishbehandling" name="Polishbehandling" type="checkbox" value="true" />
+                        <input name="Polishbehandling" type="hidden" value="false" />
+
+                        <label for="Övrigt" style="font-size: 20px;  width: 60px; margin: 10px;">Övrigt</label>
+                        <input data-val="true" data-val-required="The Städning field is required." htmlattributes="{ class = form-control }" id="Övrigt" name="Övrigt" type="checkbox" value="true" />
+                        <input name="Övrigt" type="hidden" value="false" />
+
+                    </div>
 
 
                     <div class="form-horizontal">

@@ -77,7 +77,7 @@
                                     <p>Kontorstädning</p>
                                 </li>
                                 <li>
-                                    <p>Skola och Dagis städning</p>
+                                    <p>Skola och Förskola städning</p>
                                 </li>
                                 <li>
                                     <p>Trappstädning</p>
