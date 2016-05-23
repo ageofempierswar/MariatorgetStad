@@ -23,6 +23,8 @@
     <Compile Include="php\class.smtp.php" />
     <Compile Include="php\PHPMailerAutoload.php" />
     <Compile Include="SendContact.php" />
+    <Compile Include="Service.php" />
+    <Compile Include="Thankyou.php" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include=".idea\" />

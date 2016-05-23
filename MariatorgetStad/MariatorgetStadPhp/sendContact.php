@@ -10,7 +10,7 @@
 
 if (isset($_POST['EmailAdress'], $_POST['Subject'], $_POST['Message'])) {
 
-    $to  = 'stoffe_data@hotmail.com';
+    $to  = 'linusekdahl@gmail.com'; //contact@mariatorgetstad.se
 
 // subject
 $subject = 'En ny kontakt har inkommit.';
@@ -73,7 +73,7 @@ $headers .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
 // Additional headers
 $headers .= 'To: ' . $to .  "\r\n";
 $headers .= 'From: ' . $_POST['EmailAdress'] .  "\r\n";
-$headers .= 'Cc: stoffe_data@hotmail.com' . "\r\n";
+$headers .= 'Cc: linusekdahl@gmail.com' . "\r\n";
 
 
 // Mail it
@@ -82,29 +82,4 @@ mail($to, $subject, $message, $headers);
 header('Location: Thankyou.php');
 } else {
     header('Location: Contact.php');
-   // echo $_SERVER["REQUEST_METHOD"] . $_POST['submit'];
-//echo $_GET['EmailAdress'] . ", " . $_POST['Subject'] . ", " .  $_POST['Message'];
-    /*
-     * var email = "linusekdahl@gmail.com";
-
-                var body = "<p>Email From: {0} (Subject: {1})</p><p>Message:</p><p>{2}</p>";
-                var message = new MailMessage();
-                message.To.Add(new MailAddress(email));
-                message.Subject = model.Subject;
-                message.From = new MailAddress(model.EmailAdress);
-                message.Body = string.Format(body, model.EmailAdress, model.Subject, model.Message);
-                message.IsBodyHtml = true;
-
-                using (var client = new SmtpClient())
-                {
-                    client.Host = "send.one.com";
-                    client.Port = 465;
-                    client.EnableSsl = false;
-                    client.Credentials = new NetworkCredential("contact@mariatorgetstad.se", "123456789");
-
-
-                    await client.SendMailAsync(message);
-                    return RedirectToAction("Index");
-                }
-     * */
 }
