@@ -56,8 +56,7 @@
                             <div>
                                 <h2>
                                     <label for="Cleaning" style="font-size: 20px; width: 100px; margin: 10px;">St&#228;dning</label>
-                                    <input data-val="true" data-val-required="The Städning field is required." htmlattributes="{ class = form-control }" id="Cleaning" name="Cleaning" type="checkbox" value="true" />
-                                    <input name="Cleaning" type="hidden" value="false" />
+                                  
                                 </h2>
                             </div>
                             <ul class="service">
@@ -93,8 +92,7 @@
                             <div>
                                 <h2>
                                     <label for="Maintenance" style="font-size: 20px; width: 100px; margin: 10px;">Underh&#229;ll</label>
-                                    <input data-val="true" data-val-required="The Underhåll field is required." htmlattributes="{ class = form-control }" id="Maintenance" name="Maintenance" type="checkbox" value="true" />
-                                    <input name="Maintenance" type="hidden" value="false" />
+                                  
                                 </h2>
                             </div>
                             <ul class="service">
